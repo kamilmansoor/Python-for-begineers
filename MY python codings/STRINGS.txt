@@ -1,0 +1,110 @@
+STRINGS
+
+print("kamil", end=" ")
+print("Mansoor")
+
+kamil mansoor
+
+print("kamil", "Mansoor", "ammi", sep="-")your
+kamil-Mansoor-ammi
+
+
+var1, var2, var3="kamil", "umer", "eman"
+print(var1)
+print(var2)
+print(var3)
+
+kamil
+umer
+eman
+
+
+
+print("Hello", end=" ")
+print("How", end=" ")
+print("are", end=" ")
+print("you?", end=" ")
+
+Hello How are you?
+_____________________
+
+
+
+x = "awesome"
+
+def myfunc():
+  x = "fantastic"
+  print("Python is " + x)
+
+myfunc()
+print("Python is " + x)
+out:
+Python is fantastic
+Python is awesome
+
+
+https://www.w3schools.com/python/python_variables_global.asp
+
+
+
+x = "awesome"
+
+def myfunc():
+  global x
+  x = "fantastic"
+
+myfunc()
+
+print("Python is " + x)
+
+NOTE: global keyword use karne se variable function k bhar bh call hosakta hai
+_______
+
+
+var = "    kamil    "
+print(var.strip())
+
+out:
+kamil  | strip removes spaces
+
+
+
+
+letter='''dear name
+congrats you are selected
+on date'''
+Name=input("naam bata")
+date=input("date bata")
+letter = letter.replace("name", Name)
+letter = letter.replace("date", date)
+print(letter)
+
+
+naam bata kamil
+date bata 24 nov
+dear kamil
+congrats you are selected
+on 24 nov
+
+
+
+
+str="kamil  mansoor"
+new_str=(str.replace("  ", " "))
+print(new_str)
+
+kamil mansoor
+
+
+
+
+String
+str = input("enter the name:\n ")
+var = f"kya haal hai {str}"
+if "kamil" in str:
+    var = var.replace("kamil", "ali")
+    print(var)
+else: 
+    print(var)
+
+​

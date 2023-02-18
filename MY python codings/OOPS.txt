@@ -1,0 +1,66 @@
+OOPS:
+
+
+
+class programmers:
+    company = "microsoft"
+    salary = "500"
+        
+    def info(self):
+        print(f"the programmmer working at {self.company} for {self.salary}")
+        
+kamil = programmers()
+kamil.info()
+
+out:
+the programmmer working at microsoft for 500
+
+
+
+class programmers:
+    company = "microsoft"
+    salary = "500"
+        
+    def info(self):
+        print("i am fine")
+        
+kamil = programmers()
+updated 7 april
+
+
+programmers.info(kamil)
+
+out:
+i am fine
+
+
+
+
+
+
+
+
+
+
+Q1: 
+
+class programmers:
+    company = "microsoft"
+    def __init__(self, name, product):		  | here name product are parameters
+        self.name = name
+        self.product = product
+        
+    def info(self):
+        print(f"the programmmer {self.name} working at {self.company} for {self.product}")
+kamil = programmers("kamil", "cloud compt.")    	|   here kamil cloud compt are arguments
+kamil.info()
+
+ali = programmers("ali", "cloud storage.")
+ali.info()
+
+
+___________
+kamil = programmers("kamil", "cloud compt.")   
+programmers.info(kamil)
+out:
+the programmmer kamil working at microsoft for cloud compt.

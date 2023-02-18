@@ -1,0 +1,262 @@
+name=input("your name")
+if name == "kamil" :
+ print("right")
+
+
+name = int(input("your number"))
+if name == 5 :
+ print("right")
+
+
+
+a=2
+b=3
+c=1
+d=5
+if a+b == c-d :
+    print("correct")
+else :
+    print("nikal")
+
+
+
+
+age=int(input("your age"))
+if age > 18 :
+    print("you can drive")
+elif age < 18 :
+    print("you cant drive")
+else :
+    print("you need to pass a test")
+
+
+
+
+ELSE IF (Ladder if)
+
+per=int(input("enter your percentage %"))
+if per < 100 and per >= 80 :
+ print("A+ grade")
+elif per < 80 and per >= 70 :
+    print("A grade")
+elif per < 70 and per >= 60 :
+    print("B grade")
+elif per < 60 and per >= 50 :
+    print("C grade")
+elif per < 50 and per >= 40 :
+    print("D grade")
+else :
+    print("you have entered invalid %")
+
+
+#!/usr/bin/python
+a=int(input("enter first number="))
+b=int(input("enter second number="))
+c=int(input("enter third number="))
+if a > b and a > c :
+        print("the largest number is", a)
+elif b > a and b > c :
+        print("the largest number is", b)
+elif a == b and a == c :
+        print("Numbers are same")
+else :
+        print("the largest number is", c)
+
+
+
+
+
+a=2
+b=3
+x=5
+y=5
+c=9
+d=9
+g=4
+h=10
+if (x == y or a == b) and c == d :
+    h = g
+    print(g)
+else :
+    a = h
+    print(a)
+
+OUTPUT is 4
+
+
+a=2
+b=3
+x=5
+y=5
+c=9
+d=9
+g=4
+h=10
+if (x == y or a == b) and c == d :
+    h = g
+    print(g)
+else :
+    a = h
+    print(a)
+
+OUTPUT is 10
+
+
+NESTED IF
+
+
+#gmail mechanism evaluation using nestef if
+
+mail="abc@gmail.com"
+password="abcd"
+if mail == "abc@gmail.com" :
+ if password == "abcd" :
+   print("welcome", mail)
+ 
+else :
+    print("enter correct mail first")
+
+output:welcome abc@gmail.com
+
+
+
+
+#gmail mechanism evaluation using nestef if
+I have entered wrong mail
+mail="abcd@gmail.com"
+password="abcd"
+if mail == "abc@gmail.com" :
+ if password == "abcd" :
+   print("welcome", mail)
+ 
+else :
+    print("enter correct mail first")
+
+output:enter correct mail first
+
+
+
+
+#gmail mechanism evaluation using nestef if
+
+mail="abc@gmail.com"
+password="abcde"
+if mail == "abc@gmail.com" :
+ if password == "abcd" :
+   print("welcome", mail)
+ else :
+    print("incorrect passwd")
+else :
+    print("enter correct mail first")
+
+output: incorect passwd
+
+
+
+#gmail mechanism evaluation using nestef if
+
+mail=input("enter mail")
+if mail == "abc@gmail.com" :
+ password=input("enter passwd")
+ if password == "abcd" :
+   print("welcome", mail)
+ else :
+    print("imcorrect passwd")
+else :
+    print("enter correct mail first")
+
+OUTPUT: 
+enter mail abc@gmail.com
+enter passwd abcd
+welcome abc@gmail.com
+
+OUTPUT: 
+enter mail abc@gmail.com
+enter passwd kamil
+imcorrect passwd
+
+Agar mail wrong to direct last wale else k block pe le ayega andar jaega hi nh. 
+
+
+
+
+
+#!/usr/bin/python
+a=int(input("enter first number="))
+b=int(input("enter second number="))
+c=int(input("enter third number="))
+if a > b :
+        if a > c :
+         print(a, "is largest")
+elif a == b and a == c :
+         print("same numbers")
+else :
+        if  b > c :
+         print(b, "is largest")
+        else :
+         print(c, "is largest")
+
+
+
+
+
+________________
+
+num1=int(input("enter first num"))
+num2=int(input("enter 2nd num"))
+num3=int(input("enter 3rd num"))
+num4=int(input("enter 4th num"))
+if num1 > num2 and num1 > num3 and num1 > num4 :
+    print("the greatest num is", num1)
+elif num2 > num1 and num2 > num3 and num2 > num4 :
+    print("the greatest num is", num2)
+elif num3 > num1 and num3 > num2 and num3 > num4 :
+    print("the gratest num is", num3)
+elif num1 == num2 and num2 == num3 and num3 == num4 :
+    print("Numbers are same")
+    
+else :
+    print("the greatest num is", num4)
+    
+
+___________
+nested if
+
+x = 0
+a = 6
+b = 6
+if a > 0:
+    if b < 0: 
+        x = x + 6 
+    elif a > 6:
+        x = x + 5
+    else:
+        x = x + 4
+else:
+    x = x + 3
+
+print(x)
+
+out:4
+
+_________
+
+is_hungry = True
+if(not is_hungry):
+  print("You are not hungry")
+else:
+  print("You are hungry")
+
+out:
+you are hungry
+
+
+________
+
+list1 = [[1,2,3,2,5],[4,5,6,7],[8,9,10]]
+for i in list1:
+      if len(i)==4:
+        print(i)
+
+out:
+[4,5,6,7]

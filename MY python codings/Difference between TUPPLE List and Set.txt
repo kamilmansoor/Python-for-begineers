@@ -1,0 +1,32 @@
+a=(1, 2, 3, "kamil")
+print(type(a))
+
+<class 'tuple'>
+
+
+
+a=[1, 2, 3, "kamil"]
+print(type(a))
+
+<class 'list'>
+
+
+a={1, 2, 3, "kamil"}
+print(type(a))
+
+<class 'set'>
+
+
+#L T S D (BUILD IN DATA TYPES)
+
+List is a collection which is ordered and changeable. Allows duplicate members.
+
+Tuple is a collection which is ordered and unchangeable. Allows duplicate members.Tuple items are indexed, the first item has index [0], the second item has index [1] etc.
+
+
+Set is a collection which is unordered and unindexed it is unchangeable. No duplicate members.
+
+
+Dictionary is a collection which is unordered and changeable. No duplicate members.
+
+

@@ -1,0 +1,266 @@
+  There are 2 dictionaries in list(customers) 
+
+A dictionary can contain dictionaries, this is called nested dictionaries.
+customers = [
+ {
+ "customer id": 0,
+ "first name":"John",
+ "last name": "Ogden",
+ "address": "301 Arbor Rd.",
+ },
+ {
+ "customer id": 1,	
+ "first name":"Ann",
+ "last name": "Sattermyer",
+ "address": "PO Box 1145",
+ },
+ {
+ "customer id": 2,
+ "first name":"Jill",
+ "last name": "Somers",
+ "address": "3 Main St.",
+ },
+ ]
+print(customers[0])   here 0=dictionary index numer
+output:
+{'customer id': 0, 'first name': 'John', 'last name': 'Ogden', 'address': '301 Arbor Rd.'}
+
+print(customers[0]["first name"])
+john
+
+customers[0]["customer"] = "aandu"
+print(customers[0])
+{'customer id': 0, 'first name': 'John', 'last name': 'Ogden', 'address': '301 Arbor Rd.', 'customer': 'aandu'}
+
+
+
+
+Agar har dictionary ko kisi particular index number se denote karna ho to phir is tarha number assign kardenge aur starting aur last mai square bracket ki jaga curly bracket hi ayega.
+
+customers = {
+ 1: {
+ "customer id": 0,
+ "first name":"John",
+ "last name": "Ogden",
+ "address": "301 Arbor Rd.",
+ },
+ 2: {
+ "customer id": 1,
+ "first name":"Ann",
+ "last name": "Sattermyer",
+ "address": "PO Box 1145",
+ },
+3: {
+ "customer id": 2,
+ "first name":"Jill",
+ "last name": "Somers",
+ "address": "3 Main St.",
+ },
+}
+print(customers[1])
+{'customer id': 0, 'first name': 'John', 'last name': 'Ogden', 'address': '301 Arbor Rd.'}
+customers[1]["first name"] = "asad"
+print(customers[1]["first name"])
+asad
+
+customers[3]["first name"] = "kamil"
+print(customers[3]["first name"])
+out: kamil
+
+
+
+new_dictionary = [
+{
+"customer id": "2323",
+"first name": "sdsd",
+"last name": "dsdsd",
+"address": "sdsd",
+},
+]
+print(new_dictionary[0])
+{'customer id': '2323', 'first name': 'sdsd', 'last name': 'dsdsd', 'address': 'sdsd'}
+
+
+customers.append(new_dictionary)
+print(customers)
+OUTPUT:
+[{'customer id': 0, 'first name': 'John', 'last name': 'Ogden', 'address': '301 Arbor Rd.'}, {'customer id': 1, 'first name': 'Ann', 'last name': 'Sattermyer', 'address': 'PO Box 1145'}, {'customer id': 2, 'first name': 'Jill', 'last name': 'Somers', 'address': '3 Main St.'}, [{'customer id': '2323', 'first name': 'sdsd', 'last name': 'dsdsd', 'address': 'sdsd'}]]
+
+
+
+
+__________________
+BY HARRY
+
+my_dict = {
+    "name": "kamil",
+    "father": "m.iqbal",
+    "cnic" : "4210173265513",
+}
+
+print(my_dict["name"])
+kamil
+
+
+
+my_dict = {
+    "name": "kamil",
+    "father": "m.iqbal",
+    "cnic" : "4210173265513",
+    "marks": [1, 2, 3],
+}
+print(my_dict["marks"])
+[1, 2, 3]
+
+if making changes in in any of the key values in above dictionary, then
+my_dict["marks"] = [33, 55, 87]
+print(my_dict["marks"])
+[33, 55, 87]
+
+print the keys of dictionary
+print(my_dict.keys())
+dict_keys(['name', 'father', 'cnic', 'marks'])
+
+
+print the values corresponding to keys of dictionary
+print(my_dict.values())
+dict_values(['kamil', 'm.iqbal', '4210173265513', [1, 2, 3], 2])
+
+print the keys and values
+print(my_dict.items())
+dict_items([('name', 'kamil'), ('father', 'm.iqbal'), ('cnic', '4210173265513'), ('marks', [1, 2, 3]), (1, 2)])
+
+new_dict = {
+    "residency": "fb raea",
+}
+
+
+
+ADDING DICTIONARY INTO DICTIONARY (dic2 in dic1)	
+
+my_dict.update(new_dict)
+print(my_dict)
+{'name': 'kamil', 'father': 'm.iqbal', 'cnic': '4210173265513', 'marks': [1, 2, 3], 1: 2, 'residency': 'fb raea'}
+
+
+
+
+list = {
+"my name": "kamil",
+"my cnic": "4343434",
+"my uni": {"first year": "ku", "second year": "ned"},
+}
+print(list["my uni"]["second year"])
+Out: ned
+
+
+
+
+
+
+
+car = {
+"brand": "Ford",
+"model": "Mustang",
+"year": 1964
+}
+x = car.keys()
+print(x)
+dict_keys(['brand', 'model', 'year'])
+
+
+
+car = {
+"brand": "Ford",
+"model": "Mustang",
+"year": 1964
+}
+if "brand" in car:
+    print("yes brand is there")
+out:
+yes brand is there
+
+
+
+
+
+ADDING DICTIONARY INTO DICTIONARY OR ADDING ANY  ITEM INTO DICTIOANARY USING UPDATE
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+dict_2 = {
+    "manufacturer": "kamil"
+}
+
+thisdict.update(dict_2)
+print(thisdict)
+{'brand': 'Ford', 'model': 'Mustang', 'year': 1964, 'manufacturer': 'kamil'}
+
+
+thisdict.update({"engineer": "mrx", "location": "usa"})
+print(thisdict)
+{'brand': 'Ford', 'model': 'Mustang', 'year': 1964, 'manufacturer': 'kamil', 'engineer': 'mrx', 'location': 'usa'}
+
+
+
+APPEND INTO DICtionary 
+car =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+car["color"] = "red"
+OR
+car.update({"color": "red"})
+print(car)
+
+
+
+
+
+DELETING KEY  FROM DICTIONARY: (The del keyword removes the item with the specified key name) (The clear() method empties the dictionary)
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+del thisdict["model"]
+print(thisdict)
+
+
+
+Copy a Dictionary
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+mydict = thisdict.copy()
+print(mydict)
+
+
+
+my_dic = {
+    "book": "kitaab",
+    "fan":  "pankha",
+    "bag":  "basta",
+}
+user = input("enter your key for the dic. above:\n")
+print("the meaning of entered word is", my_dic.get(user))
+
+
+
+dic = {}
+a = input("enter key ")
+dic[a]="urdu"
+print(dic)
+
+
+
+
+PYTHON DICTIONARY METHODS
+https://www.w3schools.com/python/python_dictionaries_methods.asp
+

@@ -1,0 +1,250 @@
+ Array in pYthon
+
+arr = ["kamil mansoor", "salman", "umer", 25, False]
+print(arr)
+
+['kamil mansoor', 'salman', 'umer', 25, False]
+
+print(arr[1])
+salman
+
+NOTE:salman is on index number 1
+
+print(arr[0])
+kamil mansoor
+
+
+APPEND something in array
+arr.append("umer")
+print(arr)
+['kamil mansoor', 'salman', 'umer', 25, False, 'umer']
+
+
+INSERT IN ARRAY
+kamil_array.insert(2, "yasir") 
+print(kamil_array)
+['kamil mansoor', 'salman', 'yasir', 'umer', 25, False, 'umer', 'ammi', 'abu']
+NOTE: |previous element placed at index#2 will not be deleted it will be move forward
+
+Delete in array (for specific index number)
+del kamil_array[0]
+print(kamil_array)
+['salman', 'yasir', 'umer', 25, False, 'umer', 'ammi', 'abu']
+
+Remove in Array
+kamil_array.remove("yasir")
+print(kamil_array)
+['salman', 'umer', 25, False, 'umer', 'ammi', 'abu']
+
+
+
+SORTING
+L1=[0, 6, 8, 4, 6, 2]
+L1.sort()
+print(L1)
+[0, 2, 4, 6, 6, 8]
+
+
+REVERSE
+L1=[0, 6, 8, 4, 6, 2]
+L1.reverse()
+print(L1)
+[2, 6, 4, 8, 6, 0]
+
+
+
+You can change the index number of any particular array 
+array_kamil[5]= True
+print(kamil_array)
+['kamil mansoor', 'salman', 'yasir', 'umer', 25, True, 'umer', 'ammi', 'abu']
+
+ADDING ARRAY INTO ARRAY
+kamil_array = arr + ["ammi", "abu"]
+print(kamil_array)
+['kamil mansoor', 'salman', 'umer', 25, False, 'umer', 'ammi', 'abu']
+
+
+Extend List (adding list2 into list1)
+To append elements from another list to the current list, use the extend() method.
+thislist = ["apple", "banana", "cherry"]
+tropical = ["mango", "pineapple", "papaya"]
+thislist.extend(tropical)
+print(thislist)
+out:
+['apple', 'banana', 'cherry', 'mango', 'pineapple', 'papaya']
+
+
+
+
+SLICING (ek chunk uth k store hogaya)
+array2 = kamil_array[2 : 6]
+print(array2)
+['yasir', 'umer', 25, True]
+
+array3 = arra2[:3]
+print(array3)
+['yasir', 'umer', 25]
+
+POP FUNCTION  (last wala utha k le ata hai)
+
+array4 = array3.pop()
+print(array4)
+25
+
+Copy a List
+
+thislist = ["apple", "banana", "cherry"]
+mylist = thislist.copy()
+print(mylist)
+
+['apple', 'banana', 'cherry']
+
+
+
+
+SUM  in list
+list = [34, 34, 4]
+a= sum(list)
+or 
+a = [list[0] + list[1] + list[2]]
+print(a)
+
+
+
+LIST COMPREHENSION
+
+fetching even numbers from list
+list = [3, 4, 5, 6, 7, 8]
+even=[]
+for item in list:
+    if item % 2 == 0:
+        even.append(item)
+print(even)
+
+fetching odd numbers from list
+list = [3, 4, 5, 6, 7, 8]
+odd=[]
+for item in list:
+    if item % 2 != 0:
+        odd.append(item)
+print(odd)
+        
+Better solution for above through list comprehension
+list = [3, 4, 5, 6, 7, 8]
+even=[item for item in list if item % 2 == 0]
+print(even)
+
+
+
+LIST COMPREHENSION: (table print)
+
+num = int(input("Enter your number: "))
+table = [num*i for i in range(1, 11)]
+print(table)
+
+
+
+ENUMERATE FUNCTION
+
+list = ["first", "second", "third", "4th", "5th", "6th", "7th"]
+print(list[2])
+print(list[4])
+print(list[6])
+
+out:
+third
+5th
+6th
+
+
+
+list = ["first", "second", "third", "4th", "5th", "6th", "7th"]
+for index, item in enumerate(list):
+    if index == 2 or index == 4 or index == 5:
+        print(item)
+
+out:
+third
+5th
+6th
+
+
+
+
+
+Method	Description
+append()	Adds an element at the end of the list
+clear()		Removes all the elements from the list
+copy()		Returns a copy of the list
+count()		Returns the number of elements with the specified value
+extend()	Add the elements of a list (or any iterable), to the end of the current list
+index()		Returns the index of the first element with the specified value
+insert()	Adds an element at the specified position without deleting any previous element
+pop()		Removes the element at the specified position
+remove()	Removes the item with the specified value
+reverse()	Reverses the order of the list
+sort()		Sorts the list
+
+
+
+
+_________________________________________
+
+TUPPLES:
+
+Change Tuple Values
+Once a tuple is created, you cannot change its values. Tuples are unchangeable, or immutable as it also is called.
+But there is a workaround. You can convert the tuple into a list, change the list, and convert the list back into a tuple.
+('apple', 'kiwi', 'cherry')
+
+
+Convert the tuple into a list, remove "apple", and convert it back into a tuple. Tuples are unchangeable, so you cannot remove items from it, but you can use the same workaround as we used for changing and adding tuple items:
+thistuple = ("apple", "banana", "cherry")
+y = list(thistuple)
+y.remove("apple")
+thistuple = tuple(y)
+
+
+
+COUNT IN TUPPLE
+tupple = (4, 4, 6, 0, 10, 4)
+print(tupple.count(4))
+
+
+
+__________________________________________________
+
+SETS:
+
+Add Items
+Once a set is created, you cannot change its items, but you can add new items. Add an item to a set, using the add() method:
+
+thisset = {"apple", "banana", "cherry"}
+thisset.add("orange")
+print(thisset)
+
+
+Add Sets (set2 in set1)
+To add items from another set into the current set, use the update() method.
+
+thisset = {"apple", "banana", "cherry"}
+tropical = {"pineapple", "mango", "papaya"}
+thisset.update(tropical)
+print(thisset)
+
+
+Join Two Sets into single set
+The union() method returns a new set with all items from both sets:
+
+set1 = {"a", "b" , "c"}
+set2 = {1, 2, 3}
+
+set3 = set1.union(set2)
+print(set3)
+
+
+SET METHODS:
+https://www.w3schools.com/python/python_sets_methods.asp
+
+
+

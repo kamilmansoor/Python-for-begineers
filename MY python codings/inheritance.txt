@@ -1,0 +1,51 @@
+inheritance
+
+
+class Employee:
+    company = "Google"
+    age = "22"
+    depart = "Cs"
+    
+    def showDetails(self):
+        print("This is an employee")
+
+class Programmer(Employee):
+    language = "Python"
+    company = "Youtube"
+    age = "90"
+
+    def getLanguage(self):
+        print(f"The language is {self.language}")
+    
+    def showDetails(self):
+        print("This is an programmer")
+
+
+e = Employee()
+z = Programmer()
+
+
+
+print(e.age)   #22
+# Making object attributes of parent class
+e.age = "32"
+print(e.age)   #32
+
+
+#Making object attribute of child class
+z.age = "40" 
+print(z.age)	#40
+
+
+print(z.company)   #youtube
+
+print(z.depart)	   #Cs
+
+
+Output:
+
+22
+32
+40
+Youtube
+Cs

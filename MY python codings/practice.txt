@@ -1,0 +1,110 @@
+chap 5
+dic = {
+    "book": "kitaab",
+    "pen": "kalam",
+    "light": "batti",
+}
+print("the available keys in dictionary are:", dic.keys())
+user=input("enter your word or key from above: ")
+print("the meaning of your word in urdu is:", dic.get(user))
+
+Out:
+the available keys in dictionary are: dict_keys(['book', 'pen', 'light'])
+enter your word or key from above: kamil
+the meaning of your word in urdu is: None
+
+
+lang={}
+a=input("enter your fav lang\n")
+b=input("enter your fav lang\n")
+c=input("enter your fav lang\n")
+d=input("enter your fav lang\n")
+lang["kamil"] = a
+lang["umer"] = b
+lang["eman"] = c
+lang["mano"] = d
+print(lang)
+
+
+
+
+name=input("enter name")
+if len(name) < 10 :
+    print("below 10 characters")
+elif len(name) > 10 :
+    print("more than 10 characters")
+else :
+    print("10 characters")
+
+
+
+
+Funtions Chap 8
+
+Q1:
+def max(num1, num2, num3):
+    if num1 > num2 and num1 > num3 :
+        return num1
+    elif num2 > num1 and num2 > num3 :
+        return num2
+    else :
+        return num3
+value = max(6, 6, 600)
+print(value)
+
+
+Q2:
+def cel(value):
+    Farenheit = (value * 1.8) + 32
+    return Farenheit
+cel(2)
+
+out: 35.6
+
+OR
+
+def cel(value):
+    Faren = (value * 1.8) + 32
+    return Faren
+var = cel(2)
+print(var)
+
+
+
+def in_to_cm(n):
+    var = n * 2.54
+    return var
+value = in_to_cm(4)
+print(value) 
+
+
+
+_________
+chap: File I/O
+
+Q1:
+f=open("poem.txt", "r")
+a=f.read()
+print(a.find("twinkle"))
+f.close()
+
+
+Q4:
+with open("kam.txt", "r") as f:
+    text=f.read()
+    print(text.replace("donkey", "####"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

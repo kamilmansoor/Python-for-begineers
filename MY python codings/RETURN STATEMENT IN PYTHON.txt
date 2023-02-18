@@ -1,0 +1,159 @@
+RESTURN STATEMENT IN PYTHON FUNCTION
+
+https://edube.org/learn/programming-essentials-in-python-part-1-v1-1/returning-a-result-from-a-function-10
+
+
+RETURN STATEMENT WITHOUT EXPRESSION
+
+def happy_new_year():
+    print("Three...")
+    print("Two...")
+    print("One...")
+    return     
+#return without expression is used to terminates the execution of program at a particular point
+    print("Happy New Year!")
+happy_new_year()
+
+out:
+Three...
+Two...
+One...
+
+
+def happy_new_year(wishes = True):
+    print("Three...")
+    print("Two...")
+    print("One...")
+    if not wishes:
+        return
+    
+    print("Happy New Year!")
+
+
+When invoked without any arguments:
+happy_new_year()
+out:
+Three...
+Two...
+One...
+Happy New Year!
+
+
+
+
+def happy_new_year(wishes = True):
+    print("Three...")
+    print("Two...")
+    print("One...")
+    if not wishes:
+        return
+    
+    print("Happy New Year!")
+
+happy_new_year(True)
+out:
+Three...
+Two...
+One...
+Happy New Year!
+
+
+
+
+def happy_new_year(wishes = True):
+    print("Three...")
+    print("Two...")
+    print("One...")
+    if not wishes:
+        return
+    
+    print("Happy New Year!")
+
+happy_new_year(False)
+out:
+Three...
+Two...
+One...
+
+NOTE: because on writing False, as per condition the return statement terminates the code written below it.
+ 
+
+
+
+
+RETURN STATEMENT WITH EXPRESSION
+
+def boring_function():
+    return 123
+
+x = boring_function()
+print(x)
+
+out:
+123
+
+
+
+def boring_function():
+    return 123
+
+x = boring_function()
+#print(x)
+print("The boring_function has returned its result. It's:", x)
+
+out:
+The boring_function has returned its result. It's: 123
+
+
+
+
+point to remeber:
+
+
+
+def func(a, b):
+    avg = a + b
+    print(avg)
+    
+func(2, 4)
+
+out:6
+
+
+def func(a, b):
+    avg = a + b
+    return avg
+    
+print(func(2, 4))
+
+out:6
+
+
+if write code like:
+
+def func(a, b):
+    avg = (a + b) / 2
+    return avg
+func(2, 4)
+
+
+out:
+3
+
+
+
+def func(a, b):
+    avg = a + b
+    print(avg)
+    
+print(func(2, 4))
+
+out:
+6
+None    |   None because of two times writing print function. compare with above written codes
+
+
+
+
+
+in some cases it is not showing any result on console since output can  be shown by using print function either inside the body of function or at last when assigning the arguments of functions print(func(2, 4)).
